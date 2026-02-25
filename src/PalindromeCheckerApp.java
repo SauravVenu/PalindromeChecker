@@ -9,27 +9,27 @@ public class PalindromeCheckerApp {
 
 
 
-                // Application Header
+
                 System.out.println("=====================================");
                 System.out.println("        Palindrome Checker App      ");
                 System.out.println("=====================================");
                 System.out.println("UC5: Stack-Based Palindrome Checker");
                 System.out.println();
 
-                // Take user input
+
                 Scanner scanner = new Scanner(System.in);
                 System.out.print("Enter a word: ");
                 String input = scanner.nextLine();
 
-                // Create a Stack
-                Stack<Character> stack = new Stack<>();
 
-                // Push all characters into stack
+                Stack<Character> stack =new Stack<>();
+
+
                 for (int i = 0; i < input.length(); i++) {
                     stack.push(input.charAt(i));
                 }
 
-                // Compare by popping from stack
+
                 boolean isPalindrome = true;
 
                 for (int i = 0; i < input.length(); i++) {
